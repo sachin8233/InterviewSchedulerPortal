@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "127483602556",
+    "project_id": "scheduler-b055b",
+    "storage_bucket": "scheduler-b055b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127483602556:android:d6aec190274dbaa7280bf9",
+        "android_client_info": {
+          "package_name": "exampal.com.scheduler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127483602556-jbfkcf2gulf8q8ns8820hiais6aoedeo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlr38IqkOGGn2rvf6mstvWnJ5XitehTXE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127483602556-jbfkcf2gulf8q8ns8820hiais6aoedeo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

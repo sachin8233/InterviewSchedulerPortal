@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/InterviewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Interview 1"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/InterviewText"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:text="Date"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/edtBtn"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="#FFFFFF"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="Edit"
+        android:textColor="#0277BD" />
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/edtBtn"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="3dp"
+        android:background="#FFFFFF"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="Delete"
+        android:textColor="#0277BD" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="5dp"
+        android:text="Start time" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:text="end time" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:text="Candidate_Email" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:text="Interviewer_email" />
+
+</RelativeLayout>
