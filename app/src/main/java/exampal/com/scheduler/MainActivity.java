@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
          * add item in arraylist
          */
         userArray=Data.interviewArray;
+        System.out.println(userArray);
 
 
         /**
@@ -87,43 +88,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 public void setData(){
-    firebaseDatabase = FirebaseDatabase.getInstance();
-    databaseReference = firebaseDatabase.getReference("Interview");
-
-
-
-
-        // calling add value event listener method
-        // for getting the values from database.
-        databaseReference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange( DataSnapshot snapshot) {
-            // interview_widget interviews = snapshot.getValue(interview_widget.class);
-                HashMap map= new HashMap<>();
-                ArrayList<interview_widget>interviewFromDB=new ArrayList<interview_widget>();
-                for (DataSnapshot postSnapshot : snapshot.getChildren()) {
-                    System.out.println(postSnapshot.getValue());
-                    System.out.println("------------");
-                    map=(HashMap)postSnapshot.getValue();
-                    //interview_widget newinterview=new interview_widget()
-
-
-                    System.out.println(postSnapshot.getKey());
-
-                }
-                //System.out.println(snapshot.getValue().toString());
-
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError error) {
-                // calling on cancelled method when we receive
-                // any error or we are not able to get the data.
-                Toast.makeText(MainActivity.this, "Fail to get data.", Toast.LENGTH_SHORT).show();
-            }
-        });
-
 
 
 
